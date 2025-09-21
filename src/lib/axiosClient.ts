@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosClient = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL: "https://rockfallprediction-git-main-ketan-2905s-projects.vercel.app/api",
   headers: {
     "Content-Type": "application/json",
   },
