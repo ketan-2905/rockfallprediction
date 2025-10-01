@@ -9,7 +9,7 @@ interface LoaderProps {
 
 const messages = [
   "Initializing setup...",
-  "Fetching DEM files from BhuvanDIH...",
+  "Fetching DEM files from Bhoonidhi.com...",
   "Parsing DEM files...",
   "Processing terrain data...",
   "Preparing data for rockfall prediction...",

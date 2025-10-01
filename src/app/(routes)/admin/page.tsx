@@ -402,8 +402,8 @@ const AdminLogin: React.FC = () => {
       }
 
       const res = await axiosClient.post("/auth/admin-login", {
-        username: data.username,
-        password: data.password,
+        username: data.username.trim(),
+        password: data.password.trim(),
         mineId: data.mineId,
       });
 
