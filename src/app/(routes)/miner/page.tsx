@@ -204,10 +204,8 @@ const MinerLogin: React.FC = () => {
   const sendOtp = async (data: MinerLoginForm) => {
     try {
       if (!data.mineId) return alert("Please select a mine");
-      console.log(data);
       
       const phoneNumber = `+91${data.phone}`;
-      console.log(phoneNumber);
       await axiosClient.post("/auth/send-otp", { phone: phoneNumber });
       setStep("otp");
       setCooldown(30);

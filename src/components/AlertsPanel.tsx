@@ -495,7 +495,6 @@ export default function AlertsPanelLite({ onHighlight }: AlertsPanelLiteProps) {
         coordinateId: zone.coordinateId,
       }
 
-      console.log("sone:", sone);
       
 
     try {
@@ -507,7 +506,6 @@ export default function AlertsPanelLite({ onHighlight }: AlertsPanelLiteProps) {
         riskLevel: zone.riskLevel,
         coordinateId: zone.coordinateId,
       });
-      console.log("Alert sent via SMS & WhatsApp");
 
       setHistory((h) => {
         const key = `${zone.id}-${zone.lastUpdated}`;

@@ -1771,10 +1771,8 @@ export default function RiskMap(): JSX.Element {
                 zone={selectedZone}
                 onIssue={(zoneId, rec) => {
                   // TODO: POST to backend or emit via socket
-                  console.log("Issue", zoneId, rec);
                 }}
                 onAcknowledge={(zoneId, rec) => {
-                  console.log("Ack", zoneId, rec);
                 }}
                 onClose={() => setSelectedZoneId(null)}
               />

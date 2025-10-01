@@ -124,9 +124,9 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 left-0 right-0 z-[1001] bg-gray-800/95 backdrop-blur-sm border-b border-gray-700 p-2">
       <div className="px-4 py-2 flex items-center justify-between">
-        <span className="text-gray-300 text-sm font-medium">
+        <Link href="/" className="hover:text-white transition-colors">
           Rockfall Prediction
-        </span>
+        </Link>
 
         {/* Desktop Menu */}
         <nav className="hidden md:block">
@@ -182,13 +182,29 @@ export default function Navbar() {
                 {/* Show login buttons if nobody is logged in */}
                 <li>
                   <Link
+                    href="/dashboard"
+                    className="hover:text-white transition-colors"
+                  >
+                    Dashboard
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/map"
+                    className="hover:text-white transition-colors"
+                  >
+                    Map
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="/admin"
                     className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded"
                   >
                     Admin Login
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     href="/miner
               "
@@ -196,7 +212,7 @@ export default function Navbar() {
                   >
                     Miner Login
                   </Link>
-                </li>
+                </li> */}
               </>
             )}
           </ul>
@@ -268,6 +284,22 @@ export default function Navbar() {
               <>
                 <li>
                   <Link
+                    href="/dashboard"
+                    className="hover:text-white transition-colors"
+                  >
+                    Dashboard
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/map"
+                    className="hover:text-white transition-colors"
+                  >
+                    Map
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="/admin
                     "
                     className="block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded"
@@ -276,7 +308,7 @@ export default function Navbar() {
                     Admin Login
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     href="/miner/login"
                     className="block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded"
@@ -284,7 +316,7 @@ export default function Navbar() {
                   >
                     Miner Login
                   </Link>
-                </li>
+                </li> */}
               </>
             )}
           </ul>

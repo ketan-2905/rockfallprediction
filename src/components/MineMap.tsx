@@ -263,7 +263,6 @@ export default function MineZoneMap({
     return zones;
   }, [imageBounds]);
 
-  console.log(Object.values(dataset));
 
   // If image not ready, show loading — but hooks order is stable because useMemo ran above.
   if (!imageLoaded || !imageBounds) {
@@ -477,6 +476,11 @@ export default function MineZoneMap({
               <span className="text-gray-400">Coordinates:</span>
               <div className="text-white font-mono text-sm">
                 {selectedZoneData.coordinateId}
+              </div>
+
+              <span className="text-gray-400 mt-2 block">Area:</span>
+              <div className="text-white font-mono text-sm">
+                0.50 km² {/* hard-coded value */}
               </div>
             </div>
 
